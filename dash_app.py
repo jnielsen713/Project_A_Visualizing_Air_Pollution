@@ -74,8 +74,8 @@ def update_bar_chart(state, date):
     selected_date = [date]
     df_filtered = df[df["State Name"].isin(selected_state)]
     df_filtered_twice = df_filtered[df_filtered["Date Local"].isin(selected_date)]
-    df_filtered_thrice = df_filtered_twice.groupby(['State Name', 'Date Local', 'County Name'], as_index=False)[
-        'Observation Percent'].mean()
+    df_filtered_thrice = (df_filtered_twice.groupby(['State Name', 'Date Local', 'County Name'], as_index=False)[
+        'Observation Percent'].mean())
     # Allows me to grab the mean of each county for each day; there may be multiple values per county. Credit: ChatGPT
     chart = px.bar(
         data_frame=df_filtered_thrice,
