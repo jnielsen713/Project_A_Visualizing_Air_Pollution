@@ -3,6 +3,8 @@ Joshua Nielsen
 Prof. Mike Ryu  
 CS-150 Community Action Computing  
 
+![Screenshot of the visualizer in action](/assets/sample_screenshot.png)
+
 ## Thesis Statement
 I want to create a large-scale, dynamic visual to represent recorded ozone levels across the country over the entire year of 2024. I want it to have multiple moving parts that allow the user to customize how they see the data.
 
